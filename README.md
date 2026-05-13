@@ -1,2 +1,3 @@
-# canadiansky
-The dedicated, cinematic flagship website for the Canadian Sky band project.
+IyBDYW5hZGlhbiBTa3kgV2Vic2l0ZQoKVGhlIGRpZ2l0YWwgaG9tZSBvZiB0
+aGUgYmFuZCBwcm9qZWN0IENhbmFkaWFuIFNreSwgZmVhdHVyaW5nIFBhbnRv
+a3JhdG9yIGFuZCBJbXBlcmZlY3QgSW5zcGlyYXRpb24u
