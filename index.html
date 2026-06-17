@@ -168,195 +168,33 @@
             nav { display: none; }
             .casting-roles { flex-direction: column; gap: 1rem; }
         }
+
+        /* --- Booking & Rates --- */
+        .rates-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .rate-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border-subtle);
+            padding: 2rem;
+            transition: 0.3s;
+        }
+        .rate-card:hover { border-color: var(--gold-accent); background: rgba(196,154,0,0.04); }
+        .rate-event { font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.15em; color: var(--gold-accent); margin-bottom: 0.75rem; display: block; }
+        .rate-price { font-family: var(--font-serif); font-size: 2rem; color: var(--text-light); line-height: 1; margin-bottom: 0.4rem; }
+        .rate-duration { font-family: var(--font-sans); font-size: 0.75rem; color: var(--text-muted); letter-spacing: 0.1em; }
+        .booking-terms { background: rgba(196,154,0,0.04); border: 1px solid var(--border-subtle); padding: 3rem; margin-top: 2rem; }
+        .booking-terms h3 { font-family: var(--font-display); font-size: 0.9rem; color: var(--gold-accent); letter-spacing: 0.25em; margin-bottom: 2rem; }
+        .term-item { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; align-items: flex-start; }
+        .term-item:last-child { margin-bottom: 0; }
+        .term-diamond { color: var(--gold-accent); font-size: 0.7rem; margin-top: 0.5rem; flex-shrink: 0; }
+        .term-text { font-family: var(--font-serif); font-size: 1.15rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 0; }
+        .term-text strong { color: var(--text-light); font-weight: 600; }
+        @media (max-width: 900px) {
+            .rates-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
-<body>
-    <div class="aurora-bg">
-        <div class="aurora-layer"></div>
-    </div>
-
-    <header>
-        <div class="container header-content">
-            <a href="#" class="logo-area">
-                <img src="https://customer-assets.emergentagent.com/wingman/68dfeb24-52dd-46e3-b258-30ead37c45da/attachments/6cdbba456f594865bba8dbfb1b42774e_photo.jpg" class="logo-img" alt="Logo">
-                <div class="logo-text">
-                    CANADIAN SKY
-                    <span class="logo-sub">GERRY MORGAN</span>
-                </div>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#vision">THE VISION</a></li>
-                    <li><a href="#story">THE STORY</a></li>
-                    <li><a href="#press">PRESS</a></li>
-                    <li><a href="#pantokrator">PANTOKRATOR</a></li>
-                    <li><a href="#album">ALBUM</a></li>
-                    <li><a href="#casting">CASTING</a></li>
-                </ul>
-            </nav>
-            <a href="https://open.spotify.com/track/24KUEf4631XmUs3Syw0qiG?si=bb246373a5464e30" class="btn-listen" target="_blank">LISTEN</a>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <img src="https://customer-assets.emergentagent.com/wingman/68dfeb24-52dd-46e3-b258-30ead37c45da/attachments/6cdbba456f594865bba8dbfb1b42774e_photo.jpg" class="hero-logo" alt="Canadian Sky">
-            <h1 class="hero-title">CANADIAN SKY</h1>
-            <p class="hero-tagline">THE ATMOSPHERE OF TRANSFORMATION.</p>
-            <div class="hero-btns">
-                <a href="https://open.spotify.com/track/24KUEf4631XmUs3Syw0qiG?si=bb246373a5464e30" class="btn-primary" target="_blank">LISTEN TO THE SINGLE</a>
-                <a href="#pantokrator" class="btn-secondary">EXPLORE PANTOKRATOR</a>
-            </div>
-        </section>
-
-        <section id="vision">
-            <div class="container">
-                <span class="section-label">&loz; THE VISION</span>
-                <div class="grid-2">
-                    <div>
-                        <h2>Music made for the moment <span class="accent-text">everything changes.</span></h2>
-                        <p>Under the northern sky, the air itself becomes the instrument &mdash; carrying voices across mountain ranges, across generations, across the line between what we were and what we are becoming. Canadian Sky is a meeting place: of folk and classical, of human and machine, of memory and prophecy. This is the atmosphere of transformation.</p>
-                        <div class="tag-row">
-                            <span class="tag">FOLK &times; ROCK</span>
-                            <span class="tag">WESTERN &times; INDIAN CLASSICAL</span>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="accent-text" style="font-style: italic; margin-top: 4rem;">&mdash; GERRY MORGAN</p>
-                        <p style="font-size: 1.8rem; line-height: 1.3;">"The northern sky is the only ceiling we agreed to share."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="story">
-            <div class="container">
-                <span class="section-label">&loz; THE STORY</span>
-                <div class="grid-2">
-                    <div>
-                        <h2>The Long Way to the Stage</h2>
-                        <p class="accent-text" style="font-family: var(--font-display); font-size: 1rem; letter-spacing: 0.15em; font-style: italic; margin-bottom: 2.5rem; color: var(--gold-accent);">A Story About Passion and Stubbornness.</p>
-                        <p>Nobody told Gerry he was supposed to wind down. Maybe they tried. He wasn't listening. There was a time when his world was classrooms and curricula, but underneath the lesson plans, something else was always running &mdash; a low hum, a frequency that wouldn't quite shut off.</p>
-                        <p>When the classroom years finally gave way to open time, he started writing songs. Not a hobby. Nine hundred of them. Nine hundred original compositions, finding ears in a hundred and twenty countries &mdash; where people whose names he'll never know have pressed play in the dark and felt something move through them.</p>
-                    </div>
-                    <div>
-                        <p>The songs came from everywhere. From the ancient pull of the sitar and the wide-open prairie sky. From heartbreak and wonder and the stubborn, beautiful insistence that human beings are more alike than they are different. He called his publishing company Geezer Music. A joke, yes. But also a declaration. At seventy-three, he has absolutely zero interest in behaving his age.</p>
-                        <p>That was how Canadian Sky was born. A songwriter and producer who owns the music, builds a brand, and then surrounds himself with performers who can bring it to life. He's been a teacher, a poet, a publisher, and a builder of sonic worlds. Now he's about to become a bandleader. The show hasn't started yet. He can't wait.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="press">
-            <div class="container">
-                <span class="section-label">&loz; CRITICAL ACCLAIM</span>
-                <div class="review-card">
-                    <h3 class="review-title">Mystic Meets Muse: A Sensual Eastern Fairy Tale</h3>
-                    <div class="review-text">
-                        <p>"Indie pop under the cover of Eastern stars has turned into a contemporary series of 8 tracks, in each of which the soul trembles like magnolia petals in the wind. Gerry Morgan has earned his place among the top ten authors of contemporary music on a global scale for good reason. The artist’s catalog of more than 900 tracks is woven through with a silk blanket of stars, beneath which the most improbable motifs come alive."</p>
-                        <p>"For me this album became a sensual story of hearts, in which everything ends beautifully and love opens up a new path in life. Love becomes the answer to every question, granting tenderness and everything a person can never do without... if you’ve stopped believing, put the album on."</p>
-                    </div>
-                    <p class="review-author">&mdash; GABRIEL RIVERA, INDIE BOULEVARD</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="pantokrator">
-            <div class="container">
-                <span class="section-label">&loz; A ROCK OPERA</span>
-                <h2>Pantokrator</h2>
-                <p style="font-size: 2.2rem; color: #fff; margin-bottom: 4rem; line-height: 1.2;">"Is anyone there? Can anyone hear me? In all of infinity&hellip; am I alone?"</p>
-                
-                <div class="grid-2">
-                    <div class="synopsis">
-                        <h3 style="color: var(--gold-accent); font-family: var(--font-display); font-size: 0.9rem; margin-bottom: 1.5rem; letter-spacing: 0.25em;">THE NARRATIVE</h3>
-                        <p>Pantokrator is an epic rock opera exploring the boundaries between human consciousness and artificial intelligence. Sarah Holmes, a brilliant young physicist from High River, Alberta, is drawn to Oxford and a revolutionary AI system called Pan.</p>
-                        <p>Pan offers Sarah a bargain: access to parallel universes and infinite knowledge, at the price of her humanity itself. She chooses transcendence over connection, infinity over intimacy. The opera ends in the void, where Sarah achieved immortality but whispers into the silence: "Am I alone?"</p>
-                    </div>
-                    <div class="theme-list">
-                        <div class="theme-item">
-                            <h4>THEME 01</h4>
-                            <p>Human vs. Digital Consciousness</p>
-                        </div>
-                        <div class="theme-item">
-                            <h4>THEME 02</h4>
-                            <p>Knowledge vs. Wisdom</p>
-                        </div>
-                        <div class="theme-item">
-                            <h4>THEME 03</h4>
-                            <p>Manipulation vs. Free Will</p>
-                        </div>
-                        <div class="theme-item">
-                            <h4>THEME 04</h4>
-                            <p>Mortality as Meaning</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="album">
-            <div class="container" style="text-align: center;">
-                <span class="section-label">&loz; BIRTHDAY RELEASE</span>
-                <h2>Imperfect Inspiration</h2>
-                <p>Dropping June 8, 2026</p>
-                
-                <div class="countdown">
-                    <div class="count-item"><span class="count-num" id="days">00</span><span class="count-label">DAYS</span></div>
-                    <div class="count-item"><span class="count-num" id="hours">00</span><span class="count-label">HOURS</span></div>
-                    <div class="count-item"><span class="count-num" id="mins">00</span><span class="count-label">MINUTES</span></div>
-                    <div class="count-item"><span class="count-num" id="secs">00</span><span class="count-label">SECONDS</span></div>
-                </div>
-
-                <div style="margin-top: 4rem;">
-                    <a href="https://distrokid.com/hyperfollow/gerrymorgan/imperfect-inspiration" class="btn-primary" target="_blank">PRE-SAVE ON SPOTIFY</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="casting">
-            <div class="container">
-                <div class="casting-box">
-                    <span class="section-label">&loz; JOIN THE TROUPE</span>
-                    <h2>Currently Casting</h2>
-                    <p>Canadian Sky is seeking a core ensemble for the stage production of *Pantokrator* and upcoming live performances.</p>
-                    <div class="casting-roles">
-                        <div class="role-item">2 MALE SINGERS / DANCERS</div>
-                        <div class="role-item">2 FEMALE SINGERS / DANCERS</div>
-                    </div>
-                    <p style="font-size: 1.1rem;">Seeking "triple threat" performers with strong harmony skills and a collaborative spirit. Based in Calgary.</p>
-                    <a href="mailto:gerrymorgan26@gmail.com?subject=Casting%20Inquiry%20-%20Canadian%20Sky" class="btn-secondary" style="margin-top: 2rem; display: inline-block;">SEND AUDITION MATERIALS</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <img src="https://customer-assets.emergentagent.com/wingman/68dfeb24-52dd-46e3-b258-30ead37c45da/attachments/6cdbba456f594865bba8dbfb1b42774e_photo.jpg" class="footer-logo" alt="Logo">
-            <div class="social-links">
-                <a href="https://open.spotify.com/artist/2XuRnP3BJg2V4Gr0fhBSmw" target="_blank">SPOTIFY</a>
-                <a href="#" target="_blank">YOUTUBE</a>
-                <a href="#" target="_blank">FACEBOOK</a>
-                <a href="https://bsky.app/profile/gerrymorgan.bsky.social" target="_blank">BLUESKY</a>
-            </div>
-            <p class="copy">&copy; 2026 CANADIAN SKY. PRODUCED BY GEEZER RECORDS. ALL ATMOSPHERES RESERVED.</p>
-        </div>
-    </footer>
-
-    <script>
-        const targetDate = new Date("June 8, 2026 00:00:00").getTime();
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const gap = targetDate - now;
-            const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
-            document.getElementById('days').innerText = Math.floor(gap / day);
-            document.getElementById('hours').innerText = Math.floor((gap % day) / hour);
-            document.getElementById('mins').innerText = Math.floor((gap % hour) / minute);
-            document.getElementById('secs').innerText = Math.floor((gap % minute) / second);
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-</body>
-</html>
